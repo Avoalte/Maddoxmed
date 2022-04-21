@@ -11,6 +11,8 @@ require '../PHPMailer/src/Exception.php';
 require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
 
+Encoding.default_external = Encoding.find('utf-8')
+
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
