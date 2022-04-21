@@ -31,6 +31,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /var/www/maddoxmedia.in
+            cd /var/www/onlineindia.tech
             git pull
             git status
