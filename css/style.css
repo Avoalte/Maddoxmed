@@ -173,10 +173,14 @@ h6 {
 #intro {
   width: 100%;
   position: relative;
-  background: url("../img/intro-bg.png") center bottom no-repeat;
+  background: url("../img/intro-bg.jpg") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
 }
+ #whyus {
+  /* background: url("../img/intro-bg.jpg") center bottom no-repeat; */
+  background-color: #3395ff;
+  }
 
 #intro .intro-img {
   width: 50%;
