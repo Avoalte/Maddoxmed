@@ -20,17 +20,17 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'ap201995@gmail.com';                     //SMTP username
-    $mail->Password   = '$D265254';                               //SMTP password
+    $mail->Username   = 'info.onlineindiatech@gmail.com';                     //SMTP username
+    $mail->Password   = 'Info@2022';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('ap201995@gmail.com', 'OnlineIndia');
+    $mail->setFrom('info.onlineindiatech@gmail.com', 'OnlineIndia');
     $mail->addAddress('info.onlineindiatech@gmail.com', 'Online');     //Add a recipient
     $mail->addAddress('ap201995@gmail.com');               //Name is optional
-    // $mail->addAddress('mauryaarun51@gmail.com');               //Name is optional
-    // $mail->addAddress('piyushsharma9394@gmail.com');               //Name is optional
+    $mail->addAddress('mauryaarun51@gmail.com');               //Name is optional
+    $mail->addAddress('piyushsharma9394@gmail.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
