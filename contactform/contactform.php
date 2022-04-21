@@ -11,8 +11,6 @@ require '../PHPMailer/src/Exception.php';
 require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
 
-Encoding.default_external = Encoding.find('utf-8')
-
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -22,17 +20,17 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'ap201995@gmail.com';                     //SMTP username
-    $mail->Password   = '$D265254';                               //SMTP password
+    $mail->Username   = 'info.onlineindiatech@gmail.com';                     //SMTP username
+    $mail->Password   = 'Info@2022';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('ap201995@gmail.com', 'Maddoxmedia');
-    $mail->addAddress('ap201995@gmail.com', 'Maddox');     //Add a recipient
+    $mail->setFrom('info.onlineindiatech@gmail.com', 'OnlineIndia');
+    $mail->addAddress('info.onlineindiatech@gmail.com', 'Online');     //Add a recipient
     $mail->addAddress('ap201995@gmail.com');               //Name is optional
-    // $mail->addAddress('mauryaarun51@gmail.com');               //Name is optional
-    // $mail->addAddress('piyushsharma9394@gmail.com');               //Name is optional
+    $mail->addAddress('mauryaarun51@gmail.com');               //Name is optional
+    $mail->addAddress('piyushsharma9394@gmail.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
@@ -47,7 +45,7 @@ try {
     $body .= 'Message : '.$_POST['message'].'<br>';
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Contact Form Maddox Media';
+    $mail->Subject = 'Contact Form Online India';
     $mail->Body    = $body;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
